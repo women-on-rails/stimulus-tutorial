@@ -46,6 +46,12 @@ Plein de fichiers se sont créés ! Nous allons voir rapidement ce qui s'est ajo
   
 ### Installation de StimulusJS
 
+#### Si vous utilisez Rails 6
+
+`yarn add stimulus` (ou npm)
+
+#### Pour les versions antérieures de Rails
+
 `rails webpacker:install:stimulus`<br/>
 Cette commande va:
 - ajouter stimulus à votre fichier __package.json__
