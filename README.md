@@ -151,8 +151,7 @@ data-target
 permet de marquer les éléments importants comme *target* pour qu'on puisse faciliment les référencer dans le controller.<br/>
 Sa valeur *hello.name* est appelée un *__target descriptor__*.<br/>
 Ici ce descriptor indique que *hello* est le controller et que *name* est le *name* de la *target*.<br/>
-Stimulus crée automatiquement une propriété *this.nameTarget* qui renvoie le premier élément *target* qui correspond et dont on peut alors récupérer la valeur.<br/> 
-Essayons en modifiant ainsi notre controller:
+On modifie ainsi notre controller:
 
 ```javascript
 import { Controller } from "stimulus"
@@ -167,6 +166,14 @@ export default class extends Controller {
   }
 }
 ```
+Vous avez pu voir que nous avons ajouté la ligne :
+```
+static targets = [ "name" ]
+```
+Pour chaque target présente dans l'array, Stimulus ajoute trois nouvelles propriétés à votre controller:
+- *this.nameTarget*: renvoie le premier élément *target* qui correspond au nom présent dans le scope du controller et dont on peut alors récupérer la valeur. S'il n'y en a pas ça renvoie une erreur;
+- *this.nameTargets*: renvoie un array d'éléments correspondants dans le scope du controller;
+- *this.hasnameTarget*: renvoie true ou false selon s'il y a une target présente ou non
 
 Rechargez la page, cliquez sur le bouton et regardez votre console.
 
