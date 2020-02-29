@@ -115,7 +115,7 @@ Rendez-vous sur `http://localhost:3000/` et ouvrez votre console :)<br/>
 2. Une action qui répond aux évenements DOM
 
 Pour connecter notre bouton à notre méthode, nous allons utiliser l'attribut *data-action* comme ceci dans notre HTML:
-```
+```html
 <div data-controller="hello">
   <input type="text">
   <button data-action="click->hello#greet">Greet</button>
@@ -164,7 +164,7 @@ export default class extends Controller {
 
 Rechargez la page, cliquez sur le bouton et regardez votre console.
 
-4. Un form complet<br/>
+4. Un form complet
 Nous allons finir en faisant en sorte que le message apparaisse sur la page et non dans notre console !<br/>
 Pour cela on va ajouter une div où on veut que notre nom apparaisse, avec une *data-target* avec comme targe descriptor *hello.output*.
 
@@ -195,3 +195,21 @@ export default class extends Controller {
 ```
 
 Rechargez la page et cliquez sur le bouton.
+
+5. Bonus: un peu de refactoring, déjà !
+
+```js
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  static targets = [ "name" ]
+
+  greet() {
+    console.log(`Hello, ${this.name}!`)
+  }
+
+  get name() {
+    return this.nameTarget.value
+  }
+}
+```
