@@ -198,14 +198,17 @@ Rechargez la page et cliquez sur le bouton.
 
 5. Bonus: un peu de refactoring, déjà !
 
+Nous pouvons nettoyer un peu notre méthode *greet()* en extrayant la récupération de la valeur de *name*.  
+
 ```js
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "name" ]
+  static targets = [ "name", "output" ]
 
   greet() {
-    console.log(`Hello, ${this.name}!`)
+        this.outputTarget.textContent =
+      `Hello, ${this.name}!`
   }
 
   get name() {
@@ -213,3 +216,10 @@ export default class extends Controller {
   }
 }
 ```
+
+
+## Pour approfondir 
+
+Quelques liens utiles si vous voulez creuser le sujet: 
+- Les [origines](https://stimulusjs.org/handbook/origin) de Stimulus
+- [resources](https://stimulusjs.org/reference/controllers): des définitions plus précises des éléments et méthodes
