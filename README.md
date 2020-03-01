@@ -256,3 +256,4 @@ export default class extends Controller {
 Quelques liens utiles si vous voulez creuser le sujet: 
 - Les [origines](https://stimulusjs.org/handbook/origin) de Stimulus
 - [resources](https://stimulusjs.org/reference/controllers): des définitions plus précises des éléments et méthodes
+- [Awesome Stimulus](https://github.com/skatkov/awesome-stimulusjs): regroupement de nombreux projets en open source faits avec Stimulus et aussi de nombreux tuto, une véritable mine d'or !
