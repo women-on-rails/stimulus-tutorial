@@ -110,7 +110,7 @@ Pour vérifier que votre HTML est bien connecté à votre controller Stimulus no
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  greet() {
+  connect() {
     console.log("Hello, Stimulus!", this.element)
   }
 }
@@ -120,8 +120,19 @@ C'est le moment de le voir en action !<br/>
 `rails s`<br/>
 Rendez-vous sur `http://localhost:3000/` et ouvrez votre console :)<br/>
 
-
 2. Une action qui répond aux évenements DOM
+
+Maintenant que votre page vous a bien indiqué qu'elle était "connectée" avec Stimulus, vous pouvez changer le nom de votre méthode comme ceci:
+
+```js
+import { Controller } from "stimulus"
+
+export default class extends Controller {
+  greet() {
+    console.log("Hello, Stimulus!", this.element)
+  }
+}
+```
 
 Pour connecter notre bouton à notre méthode, nous allons utiliser l'attribut *data-action* comme ceci dans notre HTML:
 ```html
