@@ -97,7 +97,10 @@ export default class extends Controller {
 C'est le moment de le voir en action !<br/>
 Ouvrez votre console et n'oubliez pas de recharger votre page :)<br/>
 
-Maintenant que votre page vous a dit bonjour vous pouvez changer le nom de la première méthode comme ceci:
+
+2. Une action qui répond aux évenements DOM
+
+Maintenant que votre page vous a bien indiqué qu'elle était "connectée" avec Stimulus, vous pouvez changer le nom de votre méthode comme ceci:
 
 ```js
 import { Controller } from "stimulus"
@@ -108,9 +111,6 @@ export default class extends Controller {
   }
 }
 ```
-
-
-2. Une action qui répond aux évenements DOM
 
 Pour connecter notre bouton à notre méthode, nous allons utiliser l'attribut *data-action* comme ceci dans notre HTML:
 ```html
