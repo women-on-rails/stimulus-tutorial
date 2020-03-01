@@ -1,10 +1,3 @@
-Une intro au framework StimulusJS.
-
-## Stimulus JS: qu'est-ce que c'est ?
-
-Stimulus a été créé par [Basecamp](https://basecamp.com/). C'est un framework de front, plus simple à prendre en main qu'Angular, React ou Vue. Il n'a pas conçu pour rendre du HTML, mais pour l'augmenter.<br/>
-StimulusJS fonctionne selon le principe de __separation of concerns__: on segmente l'application en plusieurs parties afin que chacune d’entre elles isole et gère un aspect précis. De la même façon qu'on sépare le contenu de la présentation avec le CSS, Stimulus permet de séparer le contenu du comportement. Cet arrangement aide à construire des composants réutilisables.<br/>
-
 ## Un premier exemple
 
 Nous allons commencer par un exemple simple d'implémentation :)<br/>
