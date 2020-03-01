@@ -41,7 +41,7 @@ Vous allez enlever le contenu déjà présent dans le `body` comme ceci:
 </html>
 ```
 
-/!\ À partir de maintenant, tous les éléments html devront être écrits entre les balises <body></body> !
+/!\ À partir de maintenant, tous les éléments html devront être écrits entre les balises "<body>" "</body>" !
 
 ### Hello, world !
 
@@ -57,7 +57,7 @@ Dans __public/index.html__ nous allons commencer par du HTML simple :
   <button>Greet</button>
 </div>
 ```
-Dans l'application vous trouverez un premier controller Stimulus __src/controllers/example_controller.js__ donc nous allons nous servir.<br/>
+Dans l'application vous trouverez un premier controller Stimulus __src/controllers/example_controller.js__ dont nous allons nous servir.<br/>
 Modifiez-le pour qu'il ressemble à ceci:
 ```js
 import { Controller } from "stimulus"
