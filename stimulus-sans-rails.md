@@ -41,7 +41,10 @@ Vous allez enlever le contenu déjà présent dans le `body` comme ceci:
 </html>
 ```
 
-/!\ À partir de maintenant, tous les éléments html devront être écrits entre les balises "<body>" "</body>" !
+/!\ À partir de maintenant, tous les éléments html devront être écrits entre les balises 
+```html
+<body></body>
+```
 
 ### Hello, world !
 
