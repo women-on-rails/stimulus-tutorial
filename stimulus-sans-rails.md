@@ -228,9 +228,17 @@ export default class extends Controller {
 }
 ```
 
+## Exercice
+
+Pour la suite de cet atelier, je vous propose plusieurs idées selon à quel point vous vous sentez maintenant à l'aise avec StimulusJS:
+- vous pouvez continuer les tutos de StimulusJs, qui vous proposent soit de [construire un bouton qui permet de copier du texte](https://stimulusjs.org/handbook/building-something-real) ou un [slideshow](https://stimulusjs.org/handbook/managing-state)
+- vous pouvez faire un petit exercice sans guide, en faisant un quizz, en vous inspirant de [cet exemple](https://codepen.io/FlorinPop17/full/qqYNgW)
+
+
 
 ## Pour approfondir 
 
 Quelques liens utiles si vous voulez creuser le sujet: 
 - Les [origines](https://stimulusjs.org/handbook/origin) de Stimulus
-- [resources](https://stimulusjs.org/reference/controllers): des définitions plus précises des éléments et méthodes
+- [Resources](https://stimulusjs.org/reference/controllers): des définitions plus précises des éléments et méthodes
+- [Awesome Stimulus](https://github.com/skatkov/awesome-stimulusjs): regroupement de nombreux projets en open source faits avec Stimulus et aussi de nombreux tuto, une véritable mine d'or !
