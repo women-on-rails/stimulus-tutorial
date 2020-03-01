@@ -115,6 +115,12 @@ export default class extends Controller {
   }
 }
 ```
+
+La méthode
+```js
+connect()
+```
+est appelée par Stimulus à chaque fois qu'un controller est connecté au document.
  
 C'est le moment de le voir en action !<br/>
 `rails s`<br/>
