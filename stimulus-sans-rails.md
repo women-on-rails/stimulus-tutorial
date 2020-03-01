@@ -14,14 +14,14 @@ Dans __public/index.html__, vous allez trouver les lignes suivantes:
 ```html
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="main.css">
-  <script src="bundle.js" async></script>
-</head>
-<body>
-  <h1 data-controller="example"></h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="bundle.js" async></script>
+  </head>
+  <body>
+    <h1 data-controller="example"></h1>
+  </body>
 </html>
 ```
 
@@ -29,15 +29,15 @@ Vous allez enlever le contenu déjà présent dans le `body` comme ceci:
 
 ```html
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="main.css">
-  <script src="bundle.js" async></script>
-</head>
-<body>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="bundle.js" async></script>
+  </head>
+  <body>
 
-</body>
+  </body>
 </html>
 ```
 
