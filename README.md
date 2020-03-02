@@ -52,6 +52,7 @@ Plein de fichiers se sont créés ! Nous allons voir rapidement ce qui s'est ajo
 #### Si vous utilisez Rails 6
 
 `yarn add stimulus` (ou npm)
+`rails webpacker:install:stimulus`
 
 #### Pour les versions antérieures de Rails
 
