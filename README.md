@@ -194,7 +194,7 @@ static targets = [ "name" ]
 Pour chaque target présente dans l'array, Stimulus ajoute trois nouvelles propriétés à votre controller:
 - *this.nameTarget*: renvoie le premier élément *target* qui correspond au nom présent dans le scope du controller et dont on peut alors récupérer la valeur. S'il n'y en a pas ça renvoie une erreur;
 - *this.nameTargets*: renvoie un array d'éléments correspondants dans le scope du controller;
-- *this.hasnameTarget*: renvoie true ou false selon s'il y a une target présente ou non
+- *this.hasNameTarget*: renvoie true ou false selon s'il y a une target présente ou non
 
 Rechargez la page, cliquez sur le bouton et regardez votre console.
 
